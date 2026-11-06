@@ -3,3 +3,10 @@ Pratique 1 : Creer le premier dépôt Git
 -Ouvir le terminal
 -Vérifier que Git fonctionne
 -Initialiser le premier dépôt Git
+	avant d'effectuer le premier dépôt on donne ces renseignement
+-configurer son nom
+-configurer son adresse email
+-verifier la configuration
+-faire le commit : le premier dépôt
+-verifier l'état du projet
+-Enregistrer toutes nouvelles notes
