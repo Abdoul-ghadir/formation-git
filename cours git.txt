@@ -1,0 +1,144 @@
+working directory - staging Area - Repository
+-commit
+-branch
+-merge
+
+* Les commandes fondamentales de Git
+-git init : initialiser un dépôt
+-git status : verifier l'état du projet (quels fichiers ont été modifiés, quels fichiers sont nouveaux,quels fichiers sont prêts à être enregistrés
+-git add : Ajouter des fichiers à la zone de préparation
+			 ~git add index.html : pour ajouter un seul fichier modifié
+			 ~git add . : pour ajouter tous les fichiers modifiés
+-git commit : Enregistrer les modifications	(après l'utilisation du git add, tu peux enregistrer les modifications
+			   exple : git commit -m "Premier commit"
+-git log : Consulter l'historique (cette commande affiche les commits précédents)
+
+* Git et GitHub, communiquer avec un dépôt distant
+-git remote : pour afficher les dépôts distants associés à ton projet
+-git remote -v : pour afficher leurs adresses
+-git remote add origin : Connecter le projet à GitHub
+			~git remote add origin ADDRESSE_DU_DEPOT : connecter le projet local avec le dépôt
+			~git remote add orgin https://lien.com
+-git push : Envoyer le projet sur GitHub
+			~git push origin main
+-git pull : Récuperer les modifications 
+			~git pull origin main : cette commande récupère les changements distantset les intègre dans ma branche actuelle
+-git clone : Télécharger un projet existant
+			~git clone https://github.com/.../....git : Git télécharge le projet et son historique dans un nouveau dossier.
+
+* Les branches git (branch)
+-git branch : Pour afficher les branches de mon projet
+-git branch nom : Créer une branche 
+			~git branch connexion : creer une branche appelée connexion 
+-git switch : Changer de branche 
+			~git switch connexion : pour aller dans la branche connexion 
+			~git switch main : revenir sur la branche principale
+*-Créer et rejoindre une branche en seule commande
+	GIT PROPOSE AUSSI UNE COMMANDE PLUS RAPIDE
+-git switch -c connexion : Permet de creer une branche connexion et passer automatiquement dessus
+
+*-git merge : Fusionner deux branches
+-git switch main : revenir sur main
+-git merge connexion : le travail de la branche connexion est maintenant intégré dans main
+	NB: il faut généralement avoir enregistré les modifications avec git commit avant de fusionner
+
+* Les conflits git (merge conflicts)
+
+	/* Après la resolution du conflit */
+
+-git add index.html
+-git commit -m "Résolution du conflit"
+
+* Travailler en équipe avec GitHub
+
+-git clone URL_Du_DEPOT : chaque developpeur télécharge le projet sur son ordinateur
+-git switch -c nom_de_la_branche : créer sa propre branche
+
+	/* Après avoir développé ta fonctionnalité */
+-git add . 
+-git commit -m "Ajout de la gestion des étudiants"
+
+	/* Envoyer la branche sur GitHub */
+
+-git push -u origin gestion-gestions  
+
+	/* Créer une pull request */
+
+-tu intègre dans main
+-fusionner le travail
+
+* Les dépôts publics et privés
+
+* Orgaliser un dépôt GitHub Professionnel
+
+	/* un fichier .gitignore */
+
+c'est un fichier spécial qui indique à Git quels fichiers ou dossiers il doit ignorer
+
+	/* un fichier node_modules */
+
+Il contient les dépendances installées pour ton projet
+
+	/* un fichier.env */
+
+le fichier .env permet de stocker des variables de configuration
+exple : DB_HOST=localhost
+        DB_USER=root
+        DB_PASSWORD=mon_mot_de_passe
+
+* Les commits professionnels
+
+	/* Quelques conventions courantes */
+
+-feat : Nouvelle fonctionnalité
+-fix : Correction d'une erreur
+-docs : Documentation 
+-Style : Modifications de style
+-refactor : Réorganisation du code sans changer son comportement
+	exple : git commit -m "feat: ajout de la connexion"	
+             git commit -m "fix: correction du formulaire"
+
+* Annuler des modifications avec Git
+
+	/* git restore : Annuler une modification */
+
+-git restore index.html : Cette commande restaure le fichier à son dernier état enregistré dans Git
+
+	/* git restore --staged -Retirer un fichier de la zone de prépation */
+
+-git restore --staged index.html : le fichier quitte la Stagin Area
+
+	/* git revert : Annuler un commit */
+
+-git revert IDENTIFIANT_DU_COMMIT : On créer un nouveau commit qui annule les effets de l'ancien
+-git log : pour retrouver l'identifiant du commit
+
+	/* git reset : Revenir à un commit précédent */
+
+-git reset --soft HEAD~1 : Cette commande permet de déplacer la référence de la branche vers un commit antérieur 
+-git reset --mixed HEAD~1 : Autre possibilité
+
+
+* Les tags git :
+			c'est une étiquette qui permet d'identifier un momen précis de l'historique d'un projet
+exple : On développes une application
+
+-git tag v1.0 : Créer un tag
+-git tag : Afficher les tags
+-git tag -a v1.0 -m "Première version"
+-git push origin v1.0 : Envoyer un tag sur GitHub
+-git push origin --tags : Envoyer tous les tags
+ 
+* Commandes avancées de git 
+-git diff : Comparer les modifications
+-git diff --staged : Cette commande affiche les modifications préparées pour le prochain commit
+
+-git show : Examiner un commit
+		exple : git show IDENTIFIANT_DU_COMMMIT
+
+	/* git stash : Mettre temporairement de côté son travail */
+
+-git stash : mettre à côté son travail par exemple pour aller faire une chose 
+-git stash pop : Pour recuperer le travail mis de côté
+-git stash list : Pour voir les travaux mis de coté
+

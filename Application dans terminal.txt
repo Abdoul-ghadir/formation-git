@@ -1,0 +1,5 @@
+Pratique 1 : Creer le premier dépôt Git
+-Creation du dossier de projet
+-Ouvir le terminal
+-Vérifier que Git fonctionne
+-Initialiser le premier dépôt Git
