@@ -10,3 +10,4 @@ Pratique 1 : Creer le premier dépôt Git
 -faire le commit : le premier dépôt
 -verifier l'état du projet
 -Enregistrer toutes nouvelles notes
+-Effectuer un deuxieme commit
