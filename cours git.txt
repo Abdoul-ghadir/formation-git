@@ -159,7 +159,7 @@ exple : On développes une application
 -git config --global user.email "Adresse Mail"
 -git config --list : Vérifier la configuration
  
-
+Je viens d'apprendre à utiliser git pull
 
 
 
