@@ -3,6 +3,7 @@ Pratique 1 : Creer le premier dépôt Git
 -Ouvir le terminal
 -Vérifier que Git fonctionne
 -Initialiser le premier dépôt Git
+-Verifier le status
 	avant d'effectuer le premier dépôt on donne ces renseignement
 -configurer son nom
 -configurer son adresse email
@@ -11,3 +12,13 @@ Pratique 1 : Creer le premier dépôt Git
 -verifier l'état du projet
 -Enregistrer toutes nouvelles notes
 -Effectuer un deuxieme commit
+-consulter l'historique
+-Afficher un historique simplifié
+-Comprendre git diff
+-Annuler une modification avec git restore
+-git restore --staged "Application dans terminal.txt" : Cette commande retire le fichier de la Stagin Area
+-Ajouter une branch
+-Changer de branche avec git switch
+-Verifier avec git branch
+-revenir en Arriere dans la branche principale puis Fusionner les branches
+-Connecter Git à GitHub

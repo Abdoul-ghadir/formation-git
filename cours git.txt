@@ -3,7 +3,9 @@ working directory - staging Area - Repository
 -branch
 -merge
 
-* Les commandes fondamentales de Git
+			* Les commandes fondamentales de Git
+
+
 -git init : initialiser un dépôt
 -git status : verifier l'état du projet (quels fichiers ont été modifiés, quels fichiers sont nouveaux,quels fichiers sont prêts à être enregistrés
 -git add : Ajouter des fichiers à la zone de préparation
@@ -13,16 +15,24 @@ working directory - staging Area - Repository
 			   exple : git commit -m "Premier commit"
 -git log : Consulter l'historique (cette commande affiche les commits précédents)
 
-* Git et GitHub, communiquer avec un dépôt distant
+	
+			* Git et GitHub, communiquer avec un dépôt distant
+
+
 -git remote : pour afficher les dépôts distants associés à ton projet
+
 -git remote -v : pour afficher leurs adresses
+
 -git remote add origin : Connecter le projet à GitHub
 			~git remote add origin ADDRESSE_DU_DEPOT : connecter le projet local avec le dépôt
 			~git remote add orgin https://lien.com
+
 -git push : Envoyer le projet sur GitHub
 			~git push origin main
+
 -git pull : Récuperer les modifications 
 			~git pull origin main : cette commande récupère les changements distantset les intègre dans ma branche actuelle
+
 -git clone : Télécharger un projet existant
 			~git clone https://github.com/.../....git : Git télécharge le projet et son historique dans un nouveau dossier.
 
@@ -141,4 +151,20 @@ exple : On développes une application
 -git stash : mettre à côté son travail par exemple pour aller faire une chose 
 -git stash pop : Pour recuperer le travail mis de côté
 -git stash list : Pour voir les travaux mis de coté
+
+
+* Configuration Git
+
+-git config --global user.name "Le nom" : Configurer le nom
+-git config --global user.email "Adresse Mail"
+-git config --list : Vérifier la configuration
+ 
+
+
+
+
+
+
+
+
 
