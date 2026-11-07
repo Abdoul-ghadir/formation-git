@@ -3,7 +3,7 @@ working directory - staging Area - Repository
 -branch
 -merge
 
-Bonjour
+Bonsoir
 
 			* Les commandes fondamentales de Git
 
