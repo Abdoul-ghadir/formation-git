@@ -161,7 +161,7 @@ exple : On développes une application
 -git config --global user.email "Adresse Mail"
 -git config --list : Vérifier la configuration
  
-
+developpeur 1 : Je travail sut la fonctionnalité de la gestion des étudiants.
 
 
 
