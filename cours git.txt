@@ -166,7 +166,7 @@ developpeur 1 : Je travail sut la fonctionnalité de la gestion des étudiants.
 developpeur 2 : Je travail sur la fonctionnalité de gestion de note.
 
 
-
+Nouvelle fonctionnalité : gestion des notes des étudiants.
 
 
 
